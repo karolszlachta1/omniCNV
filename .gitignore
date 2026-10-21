@@ -1,0 +1,12 @@
+Fryzlewicz/__pycache__/
+rAI/__pycache__/
+__pycache__/
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Locally generated synthetic datasets and pytest cache artifacts.
+tests/fixtures/generated_*/
+.pytest_cache/
+pytest-cache-files-*/
