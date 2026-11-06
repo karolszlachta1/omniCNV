@@ -6,7 +6,7 @@ The tool meant for CNV analysis of (almost) any sequencing data.
 
 # Clone the repository
 ```shell
-git clone -b develompent http://phoebe.stjude.org/kszlacht/rAIg.git
+git clone https://github.com/karolszlachta1/omniCNV
 ```
 
 ### Using conda
@@ -98,15 +98,15 @@ Using an allele-count TSV:
 omniCNV -t wgs \
         -c config.ini \
         -s path/sample_name \
-  -ac allele_counts.tsv
+        -ac allele_counts.tsv
 ```
 
 Using a VCF:
 ```shell
 omniCNV -t wgs \
-  -c config.ini \
-  -s path/sample_name \
-  -v sample.vcf
+        -c config.ini \
+        -s path/sample_name \
+        -v sample.vcf
 ```
 
 ### RNA/WES/ATAC/CHIP
@@ -123,11 +123,11 @@ omniCNV -t rna \
 Using a VCF instead:
 ```shell
 omniCNV -t rna \
-  -c config.ini \
-  -s path/sample_name \
-  -rp reference_panel.tsv \
-  -v sample.vcf \
-  -gc gene_counts.tsv
+        -c config.ini \
+        -s path/sample_name \
+        -rp reference_panel.tsv \
+        -v sample.vcf \
+        -gc gene_counts.tsv
 ```
 
 Replace `rna` with `wes`, `atac`, or `chip` as needed.

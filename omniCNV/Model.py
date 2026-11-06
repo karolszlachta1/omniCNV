@@ -90,7 +90,7 @@ class Model:
             d = cv[1:]-cv[:-1]
             if any (d > min_dif):
                 self.logger.debug ("Checking balanced segments for compactness.")
-                mask, m, s, sc = MADoutlier (d, thr = float(self.config["KARYOTYPING"]["DUP_MAD_thr"]),#2,
+                mask, m, s, sc = MADoutlier (d, thr = float(self.config["KARYOTYPING"]["DUP_MAD_thr"]),
                                              cov_std = np.sqrt(balanced['dcv'].median()**2/4 + min_dif**2))
                 self.logger.debug (f"Distances analysis: m = {m}, s = {s}, sc = {sc}.")
                 self.logger.info (f"Measurement uncertainty for grouping {balanced['dcv'].median()/2}")
@@ -129,7 +129,6 @@ class Model:
             res.append (np.array([0.75,0.75,1.25,1.25])*cv)
             self.logger.debug (f"m0 range added: {res[-1]}")
 
-        #TODO: needs a fix. 
         if len (imbalanced):
             m = imbalanced['cv'].min()
             ai = imbalanced.loc[imbalanced['cv'] == m, 'ai'].values[0]
