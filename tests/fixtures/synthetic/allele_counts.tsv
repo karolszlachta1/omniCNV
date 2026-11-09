@@ -1,0 +1,9 @@
+Chr	Pos	reference_tumor_count	alternative_tumor_count	Type	Chr_Allele	Alternative_Allele
+chr1	100	44	20	SNP	A	T
+chr1	200	48	18	SNP	A	C
+chr1	600	40	24	SNP	G	A
+chr2	300	51	22	SNP	C	G
+chr2	400	46	17	SNP	T	A
+chr2	500	54	21	SNP	A	G
+chr2	550	49	25	SNP	C	T
+chr1	700	52	18	SNP	T	C

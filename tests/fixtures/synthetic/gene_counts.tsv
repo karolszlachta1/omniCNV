@@ -1,0 +1,7 @@
+geneID	count	Pos	arm
+gene_1	120	100	chr1p
+gene_2	140	200	chr1q
+gene_3	130	300	chr2p
+gene_4	160	400	chr2q
+gene_5	150	600	chr1p
+gene_6	170	700	chr1q
